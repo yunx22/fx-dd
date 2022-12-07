@@ -3,11 +3,11 @@
    */
   var settings = {
     particles: {
-      length: 500, // maximum amount of particles
+      length: 800, // maximum amount of particles
       duration: 2, // particle duration in sec
-      velocity: -45, // particle velocity in pixels/sec
+      velocity: -35, // particle velocity in pixels/sec
       effect: -0.75, // play with this for a nice effect
-      size: 25, // particle size in pixels
+      size: 20, // particle size in pixels
     },
   };
 
@@ -279,7 +279,7 @@
           || (t > -2*Math.PI/3 && t < 0)
           || (t > 0 && t < 2*Math.PI/3) 
           || (t > 4*Math.PI/3 && t < 2*Math.PI)) {
-          var dir = pos.clone().length(settings.particles.velocity * -2);
+          var dir = pos.clone().length(settings.particles.velocity * -1.5);
         } else {
           var dir = pos.clone().length(settings.particles.velocity);
         }
